@@ -72,6 +72,7 @@
                             <ul>
                                 <li class="current"><a href="#home">Inicio</a></li>
                                 <li><a href="#about">Sobre mí</a></li>
+                                <li><a href="#story">Data Storytelling</a></li>
                                 <li><a href="#portfolio">Proyectos</a></li>
                                 <li><a href="#service">Tecnologías</a></li>
                                 <li><a href="#contact">Contacto</a></li>
@@ -137,6 +138,41 @@
             </div>
         </div>
         <!--::::: ABOUT AREA END :::::::-->
+
+        <!--::::: STORY AREA START :::::::-->
+        <div class="story-area section-padding" id="story">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <div class="heading white">
+                            <strong class="filltext">demo</strong>
+                            <small>DATA STORYTELLING</small>
+                            <h2>El relato detrás de los <span>datos</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-self-center">
+                        <div class="info-content">
+                            <p>Una presentación en video del análisis del dataset de empleos de Data Analyst (Glassdoor): cómo exploré los datos, qué descubrí y cómo lo convertí en una historia con visualizaciones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-60"></div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="story-video">
+                            <!-- Video PROVISIONAL. Reemplaza el ID (Sto9PZx5XDY) por el de
+                                 tu video final: la parte después de "watch?v=" o de "youtu.be/" -->
+                            <iframe src="https://www.youtube.com/embed/Sto9PZx5XDY"
+                                title="Demo de Data Storytelling — Edwin Alexander Ortiz"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--::::: STORY AREA END :::::::-->
 
         <!--::::: SKILL AREA START :::::::-->
         <div class="skill-area section-padding" id="skill">
@@ -379,6 +415,7 @@
                         <div class="footer-menu">
                             <ul>
                                 <li><a href="#about">sobre mí</a></li>
+                                <li><a href="#story">data storytelling</a></li>
                                 <li><a href="#skill">habilidades</a></li>
                                 <li><a href="#portfolio">proyectos</a></li>
                                 <li><a href="#contact">contacto</a></li>
@@ -427,7 +464,7 @@
 
         // Resaltar el enlace activo del menu segun la seccion visible
         var enlaces = document.querySelectorAll('.main-menu li a');
-        var secciones = ['home', 'about', 'portfolio', 'service', 'contact'];
+        var secciones = ['home', 'about', 'story', 'portfolio', 'service', 'contact'];
         window.addEventListener('scroll', function () {
             var actual = '';
             secciones.forEach(function (id) {
