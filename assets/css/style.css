@@ -65,6 +65,7 @@ p { margin: 0 0 16px 0; }
 .row > [class^="col"] { padding: 0 15px; }
 
 .col-12 { width: 100%; }
+.col-lg-12 { width: 100%; }
 .col-lg-4 { width: 33.3333%; }
 .col-lg-5 { width: 41.6666%; }
 .col-lg-6 { width: 50%; }
