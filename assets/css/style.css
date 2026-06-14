@@ -737,6 +737,36 @@ a.subscribe-btn:hover i {
    DATA STORYTELLING (VIDEO)
 ========================= */
 .story-area { background: #0B0D0E; }
+/* Contenedor centrado con esquinas decorativas en L */
+.story-video-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 18px;
+}
+/* Dos esquinas en L paralelas (superior-izquierda e inferior-derecha) */
+.story-video-wrap::before,
+.story-video-wrap::after {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 3px solid #08d665;
+    pointer-events: none;
+}
+.story-video-wrap::before {
+    top: 0;
+    left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+.story-video-wrap::after {
+    right: 0;
+    bottom: 0;
+    border-left: 0;
+    border-top: 0;
+}
 .story-video {
     position: relative;
     width: 100%;
@@ -783,4 +813,7 @@ a.subscribe-btn:hover i {
     .projects-grid { grid-template-columns: 1fr; }
     .skill-grid > div { width: 100%; }
     .section-padding { padding: 80px 0; }
+    .story-video-wrap { padding: 12px; }
+    .story-video-wrap::before,
+    .story-video-wrap::after { width: 30px; height: 30px; border-width: 2px; }
 }
